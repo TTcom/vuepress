@@ -1,0 +1,55 @@
+module.exports = {
+  title: 'Hello MyLove',
+  description: 'Just playing around',
+  head: [
+    ['link', { rel: 'icon', href: 'kedaicon.ico' }],
+  ],
+  themeConfig: {
+    nav: [
+      { text: 'Home', link: '/' },
+      {
+        text: 'webpack', items: [
+          { text: 'webpack3.0', link: '/webpack/webpack3/' },
+          { text: 'webpack4.0', link: '/webpack/webpack4/' }
+        ]
+      },
+      { text: 'github', link: 'https://google.com' },
+    ],
+    sidebar: {
+
+      '/webpack/webpack3/': [
+        {
+          title: 'WebPack3',
+          collapsable: false,
+        },
+        ['', '前言'],   //第一个元素为默认路径，第二个元素为设置的别名
+        'one',
+        'two',
+        ['three', 'three']
+      ],
+
+      '/webpack/webpack4/': [
+        {
+          title: 'webpack4',
+          collapsable: false,
+        },
+        ['', '前言'],   //第一个元素为默认路径，第二个元素为设置的别名
+        'module',
+
+      ],
+
+
+
+
+    },
+    sidebarDepth: 2
+
+
+
+  },
+
+
+
+
+
+}
