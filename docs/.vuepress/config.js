@@ -1,12 +1,13 @@
 module.exports = {
-  title: 'Hello MyLove',
+  title: 'We Are Brothers',
   description: 'Just playing around',
   head: [
-    ['link', { rel: 'icon', href: 'kedaicon.ico' }],
+    ['link', { rel: 'icon', href: 'earth.ico' }],
   ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
+			{ text: '随笔', link: '/note/' },
       {
         text: 'webpack', items: [
           { text: 'webpack3.0', link: '/webpack/webpack3/' },
@@ -16,7 +17,16 @@ module.exports = {
       { text: 'github', link: 'https://google.com' },
     ],
     sidebar: {
-
+      
+			'/note/': [
+				{
+				  title: '随笔',
+				  collapsable: false,
+				},
+				['', 'chrome检测内存泄漏'],   //第一个元素为默认路径，第二个元素为设置的别名
+				['nodeDeploy', 'node项目部署'],
+				
+			],
       '/webpack/webpack3/': [
         {
           title: 'WebPack3',
