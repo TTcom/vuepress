@@ -8,6 +8,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
 			{ text: '随笔', link: '/note/' },
+			{ text: '数组练习', link: '/array/' },
       {
         text: 'webpack', items: [
           { text: 'webpack3.0', link: '/webpack/webpack3/' },
@@ -17,7 +18,13 @@ module.exports = {
       { text: 'github', link: 'https://google.com' },
     ],
     sidebar: {
-      
+      '/array/': [
+      	{
+      	  title: '数组练习',
+      	  collapsable: false,
+      	},
+      	['', '获取数组中长度最长的字符'],   
+      ],
 			'/note/': [
 				{
 				  title: '随笔',
@@ -25,7 +32,6 @@ module.exports = {
 				},
 				['', 'chrome检测内存泄漏'],   //第一个元素为默认路径，第二个元素为设置的别名
 				['nodeDeploy', 'node项目部署'],
-				
 			],
       '/webpack/webpack3/': [
         {

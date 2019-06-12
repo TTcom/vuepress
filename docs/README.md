@@ -7,7 +7,7 @@
 &ensp;                     				  
 :::
 ### phpstorm安装教程
-::: tip <span style="color:#999;font-weight: initial;"><a href="https://blog.csdn.net/zff980320/article/details/88971296"phpstorm安装教程地址</a></span> 🎉 💯
+::: tip <span style="color:#999;font-weight: initial;"><a href="https://blog.csdn.net/zff980320/article/details/88971296">phpstorm安装教程地址</a></span> 🎉 💯
 &ensp;                     				  
 :::
 <img src="man.jpg" style="width:400px"/>
