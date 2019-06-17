@@ -2,13 +2,13 @@ module.exports = {
   title: 'We Are Brothers',
   description: 'Just playing around',
   head: [
-    ['link', { rel: 'icon', href: 'earth.ico' }],
+    ['link', { rel: 'icon', href: 'alien.ico' }],
   ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-			{ text: '随笔', link: '/note/' },
-			{ text: '数组练习', link: '/array/' },
+      { text: '随笔', link: '/note/' },
+      { text: '数组练习', link: '/array/' },
       {
         text: 'webpack', items: [
           { text: 'webpack3.0', link: '/webpack/webpack3/' },
@@ -19,20 +19,21 @@ module.exports = {
     ],
     sidebar: {
       '/array/': [
-      	{
-      	  title: '数组练习',
-      	  collapsable: false,
-      	},
-      	['', '获取数组中长度最长的字符'],   
+        {
+          title: '数组练习',
+          collapsable: false,
+        },
+        ['', '获取数组中长度最长的字符'],
       ],
-			'/note/': [
-				{
-				  title: '随笔',
-				  collapsable: false,
-				},
-				['', 'chrome检测内存泄漏'],   //第一个元素为默认路径，第二个元素为设置的别名
-				['nodeDeploy', 'node项目部署'],
-			],
+      '/note/': [
+        {
+          title: '随笔',
+          collapsable: false,
+        },
+        ['', 'chrome检测内存泄漏'],   //第一个元素为默认路径，第二个元素为设置的别名
+        ['nodeDeploy', 'node项目部署'],
+        ['pspeople', '快速抠出头像'],
+      ],
       '/webpack/webpack3/': [
         {
           title: 'WebPack3',
