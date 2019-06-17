@@ -1,5 +1,5 @@
 # 主页
-::: tip  <span style="color:#999;font-weight: initial;">ALL</span>
+::: tip  <span style="color:#999;font-weight: initial;">因为热爱，所以执着</span>
  &ensp;                     				  
 :::
 ### 友情提示
