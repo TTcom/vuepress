@@ -1,6 +1,7 @@
 module.exports = {
   title: 'We Are Brothers',
   description: 'Just playing around',
+  port:8082,
   head: [
     ['link', { rel: 'icon', href: 'alien.ico' }],
   ],
@@ -9,6 +10,11 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: '随笔', link: '/note/' },
       { text: '数组练习', link: '/array/' },
+      {
+        text: 'ThinkPHP', items: [
+          { text: 'ThinkPHP5.0', link: '/thinkphp/thinkphp5.0/' },
+        ]
+      },
       {
         text: 'webpack', items: [
           { text: 'webpack3.0', link: '/webpack/webpack3/' },
@@ -33,6 +39,14 @@ module.exports = {
         ['', 'chrome检测内存泄漏'],   //第一个元素为默认路径，第二个元素为设置的别名
         ['nodeDeploy', 'node项目部署'],
         ['pspeople', '快速抠出头像'],
+      ],
+      '/thinkphp/thinkphp5.0/': [
+        {
+          title: 'thinkphp5.0',
+          collapsable: false,
+        },
+        ['', '前言'],   //第一个元素为默认路径，第二个元素为设置的别名
+        ['logo', '日志'],
       ],
       '/webpack/webpack3/': [
         {
