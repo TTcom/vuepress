@@ -39,6 +39,7 @@ module.exports = {
         ['', 'chrome检测内存泄漏'],   //第一个元素为默认路径，第二个元素为设置的别名
         ['nodeDeploy', 'node项目部署'],
         ['pspeople', '快速抠出头像'],
+		['layout', '移动端适配问题'],
       ],
       '/thinkphp/thinkphp5.0/': [
         {
