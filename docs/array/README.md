@@ -27,6 +27,4 @@ var arr=['a','a','b','v','c','v','b','b','b','n','c','v'];
 	})
 	
 	console.log("出现次数最多的字符是"+maxvalue+"出现的次数为"+maxnum)
-
-
 ```

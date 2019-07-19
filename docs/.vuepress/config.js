@@ -1,4 +1,5 @@
 module.exports = {
+	base:"/chat/",
   title: 'We Are Brothers',
   description: 'Just playing around',
   port:8082,
@@ -30,6 +31,7 @@ module.exports = {
           collapsable: false,
         },
         ['', '获取数组中长度最长的字符'],
+        ['flat', 'ES10flat'],
       ],
       '/note/': [
         {
@@ -39,6 +41,7 @@ module.exports = {
         ['', 'chrome检测内存泄漏'],   //第一个元素为默认路径，第二个元素为设置的别名
         ['nodeDeploy', 'node项目部署'],
         ['pspeople', '快速抠出头像'],
+		['vueheight', 'vueheight'],
       ],
       '/thinkphp/thinkphp5.0/': [
         {
