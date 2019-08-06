@@ -71,6 +71,7 @@ module.exports = {
         },
         ['', '前言'],   //第一个元素为默认路径，第二个元素为设置的别名
         'module',
+		['aboutvue', 'aboutvue']
 
       ],
 
