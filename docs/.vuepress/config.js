@@ -43,7 +43,8 @@ module.exports = {
         ['pspeople', '快速抠出头像'],
 		['vueheight', 'vueheight'],
 		['layout', '移动端适配问题'],
-		['aboutgit', '关于git']
+		['aboutgit', '关于git'],
+		['aboutcss', 'aboutcss']
       ],
       '/thinkphp/thinkphp5.0/': [
         {
