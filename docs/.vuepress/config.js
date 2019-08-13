@@ -11,6 +11,7 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: '随笔', link: '/note/' },
       { text: '数组练习', link: '/array/' },
+	  { text: 'javascript', link: '/javascript/' },
       {
         text: 'ThinkPHP', items: [
           { text: 'ThinkPHP5.0', link: '/thinkphp/thinkphp5.0/' },
@@ -33,6 +34,16 @@ module.exports = {
         ['', '获取数组中长度最长的字符'],
         ['flat', 'ES10flat'],
       ],
+	  '/javascript/': [
+	    {
+	      title: 'javascript',
+	      collapsable: false,
+	    },
+	    ['', 'this'],  
+		['closure', '闭包'], 
+		['promise', 'promise'], 
+		['prototype', '原型链'], 
+	  ],
       '/note/': [
         {
           title: '随笔',
@@ -44,7 +55,8 @@ module.exports = {
 		['vueheight', 'vueheight'],
 		['layout', '移动端适配问题'],
 		['aboutgit', '关于git'],
-		['aboutcss', 'aboutcss']
+		['aboutcss', 'aboutcss'],
+		['vueplugin', 'vueplugin']
       ],
       '/thinkphp/thinkphp5.0/': [
         {
