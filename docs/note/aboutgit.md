@@ -2,8 +2,8 @@
 #### 问题一
 在git push的点时候报错<br />
 经常遇到该报错：Connection reset by 13.229.188.59 port 22 fatal: Could not read from remote repository.
-意为连接远程仓库失败
-#### 解决办法
+意为连接远程仓库失败；可能是网络问题只需等待网络恢复即可
+#### 或重新生成ssh
 更新代码git pull（如果git pull都失败的话确实是网络问题）  或者 重置ssh——命令：ssh-keygen -t rsa -C "xxx@xxx.com"
 ### 问题二git上传忽略node_modules
 1、在需要创建 .gitignore 文件的文件夹, 右键选择Git Bash 进入命令行，进入项目所在目录。<br />
