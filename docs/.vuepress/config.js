@@ -1,6 +1,6 @@
 module.exports = {
 	// base:"/chat/",
-  title: 'We Are Brothers',
+  title: 'We Are Dogs',
   description: 'Just playing around',
   port:8082,
   head: [
@@ -31,7 +31,7 @@ module.exports = {
           title: '数组练习',
           collapsable: false,
         },
-        ['', '获取数组中长度最长的字符'],
+        ['', '获取数组中出现次数最多的字符'],
         ['flat', 'ES10flat'],
       ],
 	  '/javascript/': [
@@ -43,6 +43,7 @@ module.exports = {
 		['closure', '闭包'], 
 		['promise', 'promise'], 
 		['prototype', '原型链'], 
+		['algorithm', '算法']
 	  ],
       '/note/': [
         {
@@ -56,7 +57,8 @@ module.exports = {
 		['layout', '移动端适配问题'],
 		['aboutgit', '关于git'],
 		['aboutcss', 'aboutcss'],
-		['vueplugin', 'vueplugin']
+		['vueplugin', 'vueplugin'],
+		['vue_proxy', 'vue_proxy']
       ],
       '/thinkphp/thinkphp5.0/': [
         {

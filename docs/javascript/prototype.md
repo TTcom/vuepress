@@ -1,5 +1,5 @@
 ### prototype
-prototype和__proto__
+prototype和__proto__的区别[](https://www.jianshu.com/p/80bcf8b2004e)
 
 ```js
 //创建函数,原型链
@@ -41,7 +41,6 @@ prototype和__proto__
 	console.log(cobj);
 	
 	
-	//https://www.jianshu.com/p/80bcf8b2004e
 	//js里的__proto__和prototype到底有什么区别？
 	// 1.在JS里，万物皆对象。方法（Function）是对象，方法的原型(Function.prototype)是对象。
 	// 因此，它们都会具有对象共有的特点。即：<strong>对象具有属性proto，可称为隐式原型，

@@ -1,6 +1,18 @@
 ### javascript中的this、call、apply、bind的区别
 简书原文链接[](https://www.jianshu.com/p/bc541afad6ee)
 ```js
+//var a = 1
+// var obj1 = {
+//     a:2,
+//     fn:function(){
+//         console.log(this)
+//     }
+// }
+// 
+// obj1.fn();  //obj1调用的该函数所以指向obj1
+// var fn1 = obj1.fn      //此时fn1为function(){console.log(this)}    所以this指向window
+// fn1()//1
+
 // 	function Product(name, price) {
 // 		this.name = name;
 // 		this.price = price;
@@ -60,17 +72,6 @@
 
 
 
-//var a = 1
-// var obj1 = {
-//     a:2,
-//     fn:function(){
-//         console.log(this)
-//     }
-// }
-// 
-// obj1.fn();  //obj1调用的该函数所以指向obj1
-// var fn1 = obj1.fn      //此时fn1为function(){console.log(this)}    所以this指向window
-// fn1()//1
 
 
 var obj = {
@@ -84,4 +85,5 @@ function printName() {
 var dot = printName.bind(obj)
 console.log(dot) // function () { … }
 dot()  // Dot
+
 ```
