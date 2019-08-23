@@ -58,7 +58,9 @@ module.exports = {
 		['aboutgit', '关于git'],
 		['aboutcss', 'aboutcss'],
 		['vueplugin', 'vueplugin'],
-		['vue_proxy', 'vue_proxy']
+		['vue_proxy', 'vue_proxy'],
+		['vue_jwt', 'vue_jwt'],
+		['treefind', '遍历树结构数据'],
       ],
       '/thinkphp/thinkphp5.0/': [
         {
