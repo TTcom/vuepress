@@ -61,6 +61,7 @@ module.exports = {
 		['vue_proxy', 'vue_proxy'],
 		['vue_jwt', 'vue_jwt'],
 		['treefind', '遍历树结构数据'],
+		['npm_releasevue', 'npm_releasevue'],
       ],
       '/thinkphp/thinkphp5.0/': [
         {
