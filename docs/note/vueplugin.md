@@ -36,6 +36,7 @@ const store = {
         }).plugin
     ]
 }
+3、vuex中action的作用可以记录用户每次的操作，可以配合开发工具进行时光穿梭，可以操作多个mutation;
 
 ```
 

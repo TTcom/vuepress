@@ -7,7 +7,7 @@
     <meta name="description" content="Just playing around">
     <link rel="icon" href="alien.ico">
     
-    <link rel="preload" href="/assets/css/0.styles.911d995a.css" as="style"><link rel="preload" href="/assets/js/app.603a5af9.js" as="script"><link rel="preload" href="/assets/js/10.a05c2449.js" as="script"><link rel="prefetch" href="/assets/js/11.a8a8df10.js"><link rel="prefetch" href="/assets/js/12.0b4ceb78.js"><link rel="prefetch" href="/assets/js/13.6e612c1d.js"><link rel="prefetch" href="/assets/js/14.44bdb5fc.js"><link rel="prefetch" href="/assets/js/15.690c4c3f.js"><link rel="prefetch" href="/assets/js/16.cb0eca33.js"><link rel="prefetch" href="/assets/js/17.47700fc4.js"><link rel="prefetch" href="/assets/js/18.f2af61da.js"><link rel="prefetch" href="/assets/js/19.17a01041.js"><link rel="prefetch" href="/assets/js/2.75bc05f4.js"><link rel="prefetch" href="/assets/js/20.6b95f5ff.js"><link rel="prefetch" href="/assets/js/21.b73ea717.js"><link rel="prefetch" href="/assets/js/22.535c1e64.js"><link rel="prefetch" href="/assets/js/23.db63e8fd.js"><link rel="prefetch" href="/assets/js/24.77bd92dc.js"><link rel="prefetch" href="/assets/js/25.b9f480e2.js"><link rel="prefetch" href="/assets/js/26.bf8dffc6.js"><link rel="prefetch" href="/assets/js/27.1d4a3537.js"><link rel="prefetch" href="/assets/js/28.b008a3d4.js"><link rel="prefetch" href="/assets/js/29.22b361a9.js"><link rel="prefetch" href="/assets/js/3.a212b81c.js"><link rel="prefetch" href="/assets/js/30.4fa09377.js"><link rel="prefetch" href="/assets/js/31.7a5551a6.js"><link rel="prefetch" href="/assets/js/4.00c871e1.js"><link rel="prefetch" href="/assets/js/5.6734ee98.js"><link rel="prefetch" href="/assets/js/6.0ddbc871.js"><link rel="prefetch" href="/assets/js/7.538537f8.js"><link rel="prefetch" href="/assets/js/8.7d1b4c2b.js"><link rel="prefetch" href="/assets/js/9.eab624eb.js">
+    <link rel="preload" href="/assets/css/0.styles.911d995a.css" as="style"><link rel="preload" href="/assets/js/app.cd040aa3.js" as="script"><link rel="preload" href="/assets/js/10.c23d9af5.js" as="script"><link rel="prefetch" href="/assets/js/11.bccf45f7.js"><link rel="prefetch" href="/assets/js/12.87d2eb89.js"><link rel="prefetch" href="/assets/js/13.eeda3f2b.js"><link rel="prefetch" href="/assets/js/14.d0a31e17.js"><link rel="prefetch" href="/assets/js/15.6133cfad.js"><link rel="prefetch" href="/assets/js/16.3af21686.js"><link rel="prefetch" href="/assets/js/17.1a847646.js"><link rel="prefetch" href="/assets/js/18.e8eeb043.js"><link rel="prefetch" href="/assets/js/19.6b5f37de.js"><link rel="prefetch" href="/assets/js/2.75bc05f4.js"><link rel="prefetch" href="/assets/js/20.40fc46e6.js"><link rel="prefetch" href="/assets/js/21.a6658919.js"><link rel="prefetch" href="/assets/js/22.8e111223.js"><link rel="prefetch" href="/assets/js/23.17b1be02.js"><link rel="prefetch" href="/assets/js/24.bd550388.js"><link rel="prefetch" href="/assets/js/25.81459e14.js"><link rel="prefetch" href="/assets/js/26.ee278dcb.js"><link rel="prefetch" href="/assets/js/27.fa2bfd52.js"><link rel="prefetch" href="/assets/js/28.a5c5c844.js"><link rel="prefetch" href="/assets/js/29.d2d2377d.js"><link rel="prefetch" href="/assets/js/3.5e1fbc08.js"><link rel="prefetch" href="/assets/js/30.761c135e.js"><link rel="prefetch" href="/assets/js/31.5af57695.js"><link rel="prefetch" href="/assets/js/32.f61b2cc2.js"><link rel="prefetch" href="/assets/js/4.37c8faac.js"><link rel="prefetch" href="/assets/js/5.c32dec6c.js"><link rel="prefetch" href="/assets/js/6.1b6295fe.js"><link rel="prefetch" href="/assets/js/7.29334bd8.js"><link rel="prefetch" href="/assets/js/8.4f5c7ee8.js"><link rel="prefetch" href="/assets/js/9.26161080.js">
     <link rel="stylesheet" href="/assets/css/0.styles.911d995a.css">
   </head>
   <body>
@@ -60,6 +60,66 @@
 	<span class="token comment">// 一个对象的隐式原型指向构造该对象的构造函数的原型，这也保证了实例能够访问在构造函数原型中定义的属性和方法。</span>
 
 
+</code></pre></div><h3 id="父亲、儿子、孙子例子"><a href="#父亲、儿子、孙子例子" aria-hidden="true" class="header-anchor">#</a> 父亲、儿子、孙子例子</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//首先god visual angle</span>
+
+	<span class="token keyword">function</span> <span class="token function">father</span><span class="token punctuation">(</span><span class="token parameter">color<span class="token punctuation">,</span>weight</span><span class="token punctuation">)</span><span class="token punctuation">{</span>   <span class="token comment">//fuqin </span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">=</span> color<span class="token punctuation">;</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>weight <span class="token operator">=</span> weight<span class="token punctuation">;</span>
+		<span class="token keyword">var</span> abc <span class="token operator">=</span> <span class="token string">&quot;abcd&quot;</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">say</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>abc<span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	
+	father<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">sport</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我会跑步'</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	
+	
+	
+	<span class="token keyword">function</span> <span class="token function">son</span><span class="token punctuation">(</span><span class="token parameter">color<span class="token punctuation">,</span>weight</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token comment">//erzi </span>
+		
+		<span class="token function">father</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span><span class="token punctuation">[</span>color<span class="token punctuation">,</span>weight<span class="token punctuation">]</span><span class="token punctuation">)</span>       <span class="token comment">//通过对象冒充的方式，无法继承通过prototype方式定义的变量和方法;无法继承sport方法</span>
+	    <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">makefire</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我能喷火'</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">;</span>
+   <span class="token comment">//    son.prototype.sport = function (){</span>
+   <span class="token comment">//    	console.log('我会跑步')</span>
+   <span class="token comment">//    }</span>
+	  <span class="token comment">// </span>
+	  
+<span class="token comment">//	 son.prototype = new father();    //修改son的原型,将son的原型指向new father();</span>
+	  
+	<span class="token keyword">var</span> dawa <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">son</span><span class="token punctuation">(</span><span class="token string">'yellow'</span><span class="token punctuation">,</span><span class="token string">'120'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      
+
+<span class="token comment">//    dawa.sport()             //通过对象冒充的方式，无法继承通过prototype方式定义的变量和方法</span>
+	
+	
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'dawa'</span><span class="token punctuation">,</span>dawa<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	
+	<span class="token keyword">function</span> <span class="token function">grandson</span><span class="token punctuation">(</span><span class="token parameter">color<span class="token punctuation">,</span>weight</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token comment">//sunzi </span>
+	
+	     <span class="token comment">// son.apply(this,[color,weight]);</span>
+	     <span class="token function">son</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span><span class="token string">'color'</span><span class="token punctuation">,</span><span class="token string">'weight'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	     <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+	     <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">makewater</span><span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	     	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我能喷水'</span><span class="token punctuation">)</span>
+	     <span class="token punctuation">}</span>  
+	
+	<span class="token punctuation">}</span>
+	
+<span class="token comment">//	grandson.prototype = new son(); </span>
+	
+	<span class="token keyword">var</span> underson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">grandson</span><span class="token punctuation">(</span><span class="token string">'red'</span><span class="token punctuation">,</span><span class="token string">'320'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+<span class="token comment">//	 underson.sport();</span>
+		
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>underson<span class="token punctuation">)</span>
+
 </code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/javascript/promise.html" class="prev">
@@ -69,6 +129,6 @@
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/assets/js/app.603a5af9.js" defer></script><script src="/assets/js/10.a05c2449.js" defer></script>
+    <script src="/assets/js/app.cd040aa3.js" defer></script><script src="/assets/js/10.c23d9af5.js" defer></script>
   </body>
 </html>
