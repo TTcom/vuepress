@@ -1,4 +1,4 @@
-## vuex-persist
+## vuex-persist数据持久化
 ::: tip vuex-persist
    Vuex持久化存储之<a href="https://github.com/championswimmer/vuex-persist" target="view_window">vuex-persist</a></span> 🎉 💯
 :::
@@ -40,8 +40,49 @@ const store = {
 
 ```
 
-## vuex-asfasft
-::: tip test
-   vuex-asfasft<a href="https://github.com/championswimmer/vuex-persist" target="view_window">vuex-persist</a></span> 🎉 💯
-:::
+## vue-skeleton-webpack-plugin骨架屏
+首先在vue.config.js中进行配置
+```js
+let skeleton = require('vue-skeleton-webpack-plugin'); 
 
+const path = require('path');
+module.exports = {
+    configureWebpack: {
+        plugins: [
+            new skeleton({
+                 webpackConfig: {
+					 entry: {
+						 app: path.resolve('./src/entry.js')   //骨架屏渲染的内容
+					 }
+                 }
+            })
+        ]
+    }
+  }
+
+```
+
+## vue的预渲染插件prerender-spa-plugin
+```js
+vue的路由模式需要是hash模式
+在vue.config.js中进行配置
+const PrerenderSPAPlugin = require('prerender-spa-plugin');
+const path = require('path');
+module.exports = {
+    configureWebpack: {
+        plugins: [
+
+			 new PrerenderSPAPlugin({
+			                staticDir: path.join(__dirname, 'dist'),
+			                routes: [ '/', '/about',],  //需要预渲染的路由地址
+			     })
+			
+			
+			
+        ]
+    }
+  }
+
+
+
+```
