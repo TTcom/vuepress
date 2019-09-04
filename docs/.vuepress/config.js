@@ -9,7 +9,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: '随笔', link: '/note/' },
+      { text: 'study', link: '/note/' },
       { text: '数组练习', link: '/array/' },
 	  { text: 'javascript', link: '/javascript/' },
       {
@@ -47,7 +47,7 @@ module.exports = {
 	  ],
       '/note/': [
         {
-          title: '随笔',
+          title: 'study',
           collapsable: false,
         },
         ['', 'chrome检测内存泄漏'],   //第一个元素为默认路径，第二个元素为设置的别名
