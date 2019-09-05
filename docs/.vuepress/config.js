@@ -40,7 +40,6 @@ module.exports = {
 	      collapsable: false,
 	    },
 	    ['', 'this'],  
-		['closure', '闭包'], 
 		['promise', 'promise'], 
 		['prototype', '原型链'], 
 		['algorithm', '算法']
