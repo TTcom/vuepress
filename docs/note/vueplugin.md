@@ -73,8 +73,8 @@ module.exports = {
         plugins: [
 
 			 new PrerenderSPAPlugin({
-			                staticDir: path.join(__dirname, 'dist'),
-			                routes: [ '/', '/about',],  //需要预渲染的路由地址
+						staticDir: path.join(__dirname, 'dist'),
+						routes: [ '/', '/about',],  //需要预渲染的路由地址
 			     })
 			
 			
