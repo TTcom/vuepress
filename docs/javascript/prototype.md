@@ -2,6 +2,9 @@
 prototype和__proto__的区别[](https://www.jianshu.com/p/80bcf8b2004e)
 
 ```js
+
+// prototype //原型  每一个函数都有自己的原型prototype
+// __proto__ //原型链  每一个对象都有自己的原型链
 //创建函数,原型链
 	function foo(){};
 	foo.prototype.z=3;

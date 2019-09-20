@@ -62,6 +62,7 @@ module.exports = {
 		['treefind', '遍历树结构数据'],
 		['npm_releasevue', 'npm_releasevue'],
 		['classArray', '类数组对象'],
+		['deepclone', '深拷贝'],
       ],
       '/thinkphp/thinkphp5.0/': [
         {
