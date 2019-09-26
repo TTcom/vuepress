@@ -23,7 +23,7 @@ module.exports = {
           { text: 'webpack4.0', link: '/webpack/webpack4/' }
         ]
       },
-      { text: 'github', link: 'https://google.com' },
+      { text: 'github', link: 'https://github.com' },
     ],
     sidebar: {
       '/array/': [
@@ -39,7 +39,7 @@ module.exports = {
 	      title: 'javascript',
 	      collapsable: false,
 	    },
-	    ['', 'this'],  
+	    ['', 'call_apply_bind'],  
 		['promise', 'promise'], 
 		['prototype', '原型链'], 
 		['algorithm', '算法']

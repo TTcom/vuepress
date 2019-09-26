@@ -1,6 +1,36 @@
 ### javascript中的this、call、apply、bind的区别
 简书原文链接[](https://www.jianshu.com/p/bc541afad6ee)
 ```js
+//call apply bind
+	
+	//call（接收的是参数）和 apply（接收的是数组） 的特点可以改变我们当前函数的this指向,还会让当前函数执行
+// 	function fn1(){
+// 		console.log(this)
+// 	}
+// 	function fn2(){
+// 		console.log(2);
+// 	}
+	
+// //	fn1.call("hello",'123154')
+	
+// 	fn1.call.call(fn2);
+	
+	//bind 
+	//1) bind方法可以绑定this指向
+	//2)bind方法返回一个绑定后的函数
+	//3)如果绑定的函数被new了 当前函数的this就是当前的实例
+	let obj = {
+		name:"jw"
+	}
+	
+	function fn(){
+		console.log(this.name)
+	}
+	
+	let bindFn = fn.bind(obj)
+	bindFn();
+-----------------------------------------------------
+
 //var a = 1
 // var obj1 = {
 //     a:2,
