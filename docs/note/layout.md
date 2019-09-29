@@ -1,8 +1,40 @@
-### 关于移动端自适应适配
+### 关于移动端适配
 
-1、首先说一下在几年前使用的技术rem;<br />
-在vue中使用首先在vue中通过使用px2rem-loader可以将px自动转换为rem;<br />
-通过使用hotcss解决移动端适配
+- 使用flexible.js或hotCss.js 改js可适配不同屏幕-使用动态的HTML根字体大小和动态的viewport scale
+- 安装插件postcss-plugin-px2rem该插件可将px转为rem
+- 以vue-cli3为例首先在main.js中引入flexible.js或hotCss.js
+- 然后在vue.config.js中写入插件的配置
+ ```js
+ module.exports = {
+ publicPath: process.env.NODE_ENV === 'production'
+         ? './'
+         : '/',
+             css: {
+                 loaderOptions: {
+                     postcss: {
+ 					   
+                         plugins: [
+                             require('postcss-plugin-px2rem')({
+                                 rootValue: 75, //换算基数， 默认100  ，这样的话把根标签的字体规定为1rem为50px,这样就可以从设计稿上量出多少个px直接在代码中写多上px了。
+                                 // unitPrecision: 5, //允许REM单位增长到的十进制数字。
+                                 //propWhiteList: [],  //默认值是一个空数组，这意味着禁用白名单并启用所有属性。
+                                 // propBlackList: [], //黑名单
+                                 //exclude: /(node_module)/, //默认false，可以（reg）利用正则表达式排除某些文件夹的方法，例如/(node_module)\/如果想把前端UI框架内的px也转换成rem，请把此属性设为默认值
+                                 // selectorBlackList: [], //要忽略并保留为px的选择器
+                                 // ignoreIdentifier: false,  //（boolean/string）忽略单个属性的方法，启用ignoreidentifier后，replace将自动设置为true。
+                                 // replace: true, // （布尔值）替换包含REM的规则，而不是添加回退。
+                                 mediaQuery: false, //（布尔值）允许在媒体查询中转换px。 false意为不转换
+                                 minPixelValue: 3 //设置要替换的最小像素值(3px会被转rem)。 默认 0
+                             }),
+ 							require("autoprefixer")
+ 							
+                         ]
+                     }
+                 }
+             }
+     
+         }
 
-2、近年来通过技术的不断发展目前主流的使用方案为通过是用vw来解决移动端适配问题；<br />
-点击查看<a href="https://www.w3cplus.com/mobile/vw-layout-in-vue.html" target="view_window">如何在Vue项目中使用vw实现移动端适配</a>
+ ```
+
+关于browserslist的配置可查看[](https://chrisdeo.github.io/2019/08/16/%E5%85%B3%E4%BA%8Ebrowserslist%E7%9A%84%E9%85%8D%E7%BD%AE/)
