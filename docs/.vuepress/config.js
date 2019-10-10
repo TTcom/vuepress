@@ -63,6 +63,7 @@ module.exports = {
 		['npm_releasevue', 'npm_releasevue'],
 		['classArray', '类数组对象'],
 		['deepclone', '深拷贝'],
+		['center', '垂直水平居中'],
       ],
       '/thinkphp/thinkphp5.0/': [
         {
