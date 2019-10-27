@@ -65,6 +65,7 @@ module.exports = {
 		['deepclone', '深拷贝'],
 		['center', '垂直水平居中'], 
 		['svg', 'svg'],
+		['learndocker', 'learndocker']
       ],
       '/thinkphp/thinkphp5.0/': [
         {
