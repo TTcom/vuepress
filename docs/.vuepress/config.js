@@ -65,7 +65,9 @@ module.exports = {
 		['deepclone', '深拷贝'],
 		['center', '垂直水平居中'], 
 		['svg', 'svg'],
-		['learndocker', 'learndocker']
+		['learndocker', 'learndocker'],
+		['moregitssh', '配置多个ssh'],
+		['funcomponent', 'vue函数式组件']
       ],
       '/thinkphp/thinkphp5.0/': [
         {

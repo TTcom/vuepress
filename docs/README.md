@@ -1,5 +1,5 @@
 # 主页
-::: tip  <span style="color:#999;font-weight: initial;">流浪多年的狗</span>
+::: tip  <span style="color:#999;font-weight: initial;">狗富贵，互相汪</span>
  &ensp;                     				  
 :::
 ### 友情提示
