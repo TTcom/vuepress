@@ -42,7 +42,8 @@ module.exports = {
 	    ['', 'call_apply_bind'],  
 		['promise', 'promise'], 
 		['prototype', '原型链'], 
-		['algorithm', '算法']
+    ['algorithm', '算法'],
+    ['regex', '正则'],
 	  ],
       '/note/': [
         {
