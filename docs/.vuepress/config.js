@@ -42,7 +42,8 @@ module.exports = {
 	    ['', 'call_apply_bind'],  
 		['promise', 'promise'], 
 		['prototype', '原型链'], 
-		['algorithm', '算法']
+    ['algorithm', '算法'],
+    ['regex', '正则'],
 	  ],
       '/note/': [
         {
@@ -65,7 +66,9 @@ module.exports = {
 		['deepclone', '深拷贝'],
 		['center', '垂直水平居中'], 
 		['svg', 'svg'],
-		['learndocker', 'learndocker']
+		['learndocker', 'learndocker'],
+		['moregitssh', '配置多个ssh'],
+		['funcomponent', 'vue函数式组件']
       ],
       '/thinkphp/thinkphp5.0/': [
         {
