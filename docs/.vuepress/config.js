@@ -10,8 +10,9 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'study', link: '/note/' },
+      { text: 'vue', link: '/vue/' },
       { text: '数组练习', link: '/array/' },
-	  { text: 'javascript', link: '/javascript/' },
+	    { text: 'javascript', link: '/javascript/' },
       {
         text: 'ThinkPHP', items: [
           { text: 'ThinkPHP5.0', link: '/thinkphp/thinkphp5.0/' },
@@ -33,6 +34,13 @@ module.exports = {
         },
         ['', '获取数组中出现次数最多的字符'],
         ['flat', 'ES10flat'],
+      ],
+      '/vue/': [
+        {
+          title: 'VUE',
+          collapsable: false,
+        },
+        ['', 'Vue打包文件浏览器存在缓存问题']
       ],
 	  '/javascript/': [
 	    {
