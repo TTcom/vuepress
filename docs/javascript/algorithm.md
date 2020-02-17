@@ -51,3 +51,26 @@ var arr = [3,44,38,2,27]; //length: 5
 	console.log(arr)
 	
 ```
+## 获取数组
+```js
+     let arr = ['2','5','4','rew','yth'];
+
+     let num = Math.floor(Math.random() * (arr.length));
+
+   console.log(arr[num]);
+
+      //Math.floor()向下取整
+      //Math.ceil()向上取整    
+      //Math.random()获取[0,1)之间的一个随机数，但不包含1
+     // js生成四个随机字母
+      function getRanNum(){
+       var result = [];
+        for(var i=0;i<4;i++){
+           var ranNum = Math.ceil(Math.random() * 25); //生成一个0到25的数字
+            //大写字母'A'的ASCII是65,A~Z的ASCII码就是65 + 0~25;然后调用String.fromCharCode()传入ASCII值返回相应的字符并push进数组里
+            result.push(String.fromCharCode(65+ranNum));
+        }
+     return  result.join('');
+    }
+
+```

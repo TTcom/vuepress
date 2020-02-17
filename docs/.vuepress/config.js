@@ -40,7 +40,8 @@ module.exports = {
           title: 'VUE',
           collapsable: false,
         },
-        ['', 'Vue打包文件浏览器存在缓存问题']
+        ['', 'Vue打包文件浏览器存在缓存问题'],
+        ['vue3', 'Vue3新特性']
       ],
 	  '/javascript/': [
 	    {
@@ -104,7 +105,7 @@ module.exports = {
         },
         ['', '前言'],   //第一个元素为默认路径，第二个元素为设置的别名
         'module',
-		['aboutvue', 'aboutvue']
+		    ['aboutvue', 'aboutvue']
 
       ],
 
@@ -112,7 +113,7 @@ module.exports = {
 
 
     },
-    sidebarDepth: 2
+    sidebarDepth: 23
 
 
 
