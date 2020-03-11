@@ -53,6 +53,7 @@ module.exports = {
 		['prototype', '原型链'], 
     ['algorithm', '算法'],
     ['regex', '正则'],
+    ['eventloop', 'eventloop'],
 	  ],
       '/note/': [
         {
@@ -66,6 +67,7 @@ module.exports = {
 		['layout', '移动端适配问题'],
 		['aboutgit', '关于git'],
 		['aboutcss', 'aboutcss'],
+		['rowcss', 'rowcss'],
 		['vueplugin', 'vueplugin'],
 		['vue_proxy', 'vue_proxy'],
 		['vue_jwt', 'vue_jwt'],
