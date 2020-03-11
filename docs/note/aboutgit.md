@@ -82,3 +82,20 @@ c）规则：
 简单来说，出现这种问题的原因就是Git已经开始管理这些文件了，所以你无法再通过过滤规则过滤它们。因此一定要养成在项目开始就创建.gitignore文件的习惯，否则一旦push，处理起来会非常麻烦。
 ```
 <a href="https://blog.csdn.net/qq_37818095/article/details/82145062" target="view_window">如何在Vue项目中使用vw实现移动端适配</a>
+
+
+### git stash
+
+1、 git stash save "save message"  : 执行存储时，添加备注，方便查找，只有git stash 也要可以的，但查找时不方便识别。
+
+2、git stash list  ：查看stash了哪些存储
+
+3、git stash show ：显示做了哪些改动，默认show第一个存储,如果要显示其他存贮，后面直接跟id，比如第二个 git stash show 跟list中的id号
+
+4、git stash apply :应用某个存储,但不会把存储从存储列表中删除，默认使用第一个存储,即stash@{0}，注意apply后面直接跟0不要写stash@{0}
+
+5、git stash pop ：命令恢复之前缓存的工作目录，将缓存堆栈中的对应stash删除，并将对应修改应用到当前的工作目录下,默认为第一个stash,即stash@{0}，注意pop后面直接跟0不要写stash@{0}
+
+6、git stash drop stash@{$num} ：丢弃stash@{$num}存储，从列表中删除这个存储
+
+7、git stash clear ：删除所有缓存的stash
