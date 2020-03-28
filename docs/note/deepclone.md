@@ -49,10 +49,8 @@
 				 cloneObj[key] = deepClone(obj[key],hash);
 			 }
 		}
-		
 		return cloneObj;
-		
-		
+
 	}
 	
 	let obj = {name:12,address:{x:200}};

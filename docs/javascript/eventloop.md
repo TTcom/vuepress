@@ -16,7 +16,6 @@
 <script>
  
 
-//主线程 - 执行栈 - 调用栈 - 微任务 - 宏任务 - 页面渲染
 
 var index = 0;
 var startDate = Date.now()

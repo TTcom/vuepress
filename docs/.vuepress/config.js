@@ -41,7 +41,8 @@ module.exports = {
           collapsable: false,
         },
         ['', 'Vue打包文件浏览器存在缓存问题'],
-        ['vue3', 'Vue3新特性']
+        ['vue3', 'Vue3新特性'],
+        ['vuebuttonauth', 'Vue中按钮权限设置']
       ],
 	  '/javascript/': [
 	    {
