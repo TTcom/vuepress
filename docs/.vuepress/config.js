@@ -3,7 +3,7 @@ const note = require('./note.js')
 
 module.exports = {
   // base:"/chat/",
-  title: 'We Are Dogs',
+  title: 'Uphold',
   description: 'Just playing around',
   port: 8082,
   head: [
