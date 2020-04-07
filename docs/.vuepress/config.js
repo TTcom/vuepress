@@ -44,34 +44,12 @@ module.exports = {
         ['eventloop', 'eventloop'],
       ],
       '/note/': note,
-      '/thinkphp/thinkphp5.0/': [
+      '/webpack/': [
         {
-          title: 'thinkphp5.0',
+          title: 'WebPack',
           collapsable: false,
         },
-        ['', '前言'],   //第一个元素为默认路径，第二个元素为设置的别名
-        ['logo', '日志'],
-      ],
-      '/webpack/webpack3/': [
-        {
-          title: 'WebPack3',
-          collapsable: false,
-        },
-        ['', '前言'],   //第一个元素为默认路径，第二个元素为设置的别名
-        'one',
-        'two',
-        ['three', 'three']
-      ],
-
-      '/webpack/webpack4/': [
-        {
-          title: 'webpack4',
-          collapsable: false,
-        },
-        ['', '前言'],   //第一个元素为默认路径，第二个元素为设置的别名
-        'module',
-        ['aboutvue', 'aboutvue']
-
+        ['', 'WebPack'],   //第一个元素为默认路径，第二个元素为设置的别名
       ],
 
     },
