@@ -22,5 +22,6 @@ module.exports = [
     ['svg', 'svg'],
     ['learndocker', 'learndocker'],
     ['moregitssh', '配置多个ssh'],
-    ['funcomponent', 'vue函数式组件']
+    ['funcomponent', 'vue函数式组件'],
+    ['vantcssquestion', 'vant移动端适配问题'],
   ]
