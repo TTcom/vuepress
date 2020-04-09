@@ -51,6 +51,13 @@ module.exports = {
         },
         ['', 'WebPack'],   //第一个元素为默认路径，第二个元素为设置的别名
       ],
+      '/nginx/': [
+        {
+          title: 'Nginx',
+          collapsable: false,
+        },
+        ['', 'nginx'],   //第一个元素为默认路径，第二个元素为设置的别名
+      ],
 
     },
     sidebarDepth: 23

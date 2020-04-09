@@ -5,5 +5,6 @@ module.exports = [
     { text: '数组练习', link: '/array/' },
     { text: 'javascript', link: '/javascript/' },
     { text: 'webpack', link: '/webpack/' },
+    { text: 'Nginx', link: '/nginx/' },
     { text: 'github', link: 'https://github.com' },
   ]
