@@ -29,6 +29,11 @@ module.exports = {
         ['vue3', 'Vue3新特性'],
         ['vuebuttonauth', 'Vue中按钮权限设置'],
         ['vuex', 'vuex'],
+        ['vueantic', 'vueantic'],
+        ['vueplugin', 'vueplugin'],
+        ['vue_proxy', 'vue_proxy'],
+        ['vue_jwt', 'vue_jwt'],
+        ['funcomponent', 'vue函数式组件']
       ],
       '/javascript/': [
         {

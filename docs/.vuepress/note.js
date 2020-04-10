@@ -10,10 +10,7 @@ module.exports = [
     ['layout', '移动端适配问题'],
     ['aboutgit', '关于git'],
     ['aboutcss', 'aboutcss'],
-    ['rowcss', 'rowcss'],
-    ['vueplugin', 'vueplugin'],
-    ['vue_proxy', 'vue_proxy'],
-    ['vue_jwt', 'vue_jwt'],
+    ['rowcss', 'rowcss'],   
     ['treefind', '遍历树结构数据'],
     ['npm_releasevue', 'npm_releasevue'],
     ['classArray', '类数组对象'],
@@ -22,6 +19,5 @@ module.exports = [
     ['svg', 'svg'],
     ['learndocker', 'learndocker'],
     ['moregitssh', '配置多个ssh'],
-    ['funcomponent', 'vue函数式组件'],
     ['vantcssquestion', 'vant移动端适配问题'],
   ]
