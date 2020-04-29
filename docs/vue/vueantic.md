@@ -121,35 +121,15 @@ this.destroy()
 使用vue-cli3打包项目，通过配置不同的指令给项目设置不一样的配置。
 
 npm run serve时会把process.env.NODE_ENV设置为‘development’；
-
+根目录下以.env.development文件中的配置会生效
+配置参数命名必须以VUE_APP_开头
 npm run build 时会把process.env.NODE_ENV设置为‘production’；
+根目录下以.env.production文件中的配置会生效
+配置参数命名必须以VUE_APP_开头
 
-此时只要根据process.env.NODE_ENV设置不同请求url就可以很简单的区分出本地和线上环境。
 
-头疼的是打包时线上环境可能分多种，比如测试环境和生产环境等等。
-
-在vue-cli2中打包时可以修改 “build” 和 “config”中的文件来区分不同的线上环境
-
-而vue-cli3号称0配置，无法直接修改打包文件，那么怎么区分不同的线上环境分别传入不一样的配置呢？
-
-官网给我们做了简单介绍（vue-cli-service-build）,但只解释了现有几个指令所匹配的模式,对于上面的需求显然无法满足。
-
-如下提供一种解决方案：
-首先在package.json文件内添加测试环境和生产环境的打包指令：
-
-```js
-"build-test": "vue-cli-service build --mode alpha",
-"build-prod": "vue-cli-service build --mode prod",
-```
-
-在项目根目录添加两个文件
-.env.alpha
-
-```js
-NODE_ENV = 'production'
-VUE_APP_BASE_URL = 'http://test.linbenjian.work'
-```
-
+除以上两种方式命名外还可以自定义命名但需要声明环境且在运行时需要指明是哪一个文件
+例如：
 .env.prod
 
 ```js
@@ -157,18 +137,30 @@ NODE_ENV = 'production'
 VUE_APP_BASE_URL = 'http://www.linbenjian.work'
 ```
 
+然后在package.json文件中,example
+需要在--mode后面指明文件名称，serve默认就是development
+build默认是production
 
-在项目中使用参数：
+```json
+    "serve": "vue-cli-service serve --mode",
+    "dev-serve": "vue-cli-service serve --mode dev",
+    "build": "vue-cli-service build --mode",
+    "dev": "vue-cli-service build --mode dev",
+    "uat1": "vue-cli-service build --mode uat1",
+    "fat": "vue-cli-service build --mode fat",
+    "stg": "vue-cli-service build --mode stg",
+    "prd": "vue-cli-service build --mode prd",
+    "lint": "vue-cli-service lint"
 
-```js
-  import axios from 'axios'
-  let baseurl = process.env.VUE_APP_BASE_URL || 'http://localhost:9001'
 ```
- 
-注：
 
-—mode后面添加test、production 等预留参数无效
-配置文件内，参数添加VUE_APP 可通过调试
+在项目中使用，直接通过process.env.VUE_APP_去拿
+process.env.VUE_APP_BASE_URL
+
+
+
+ 
+
 
 
 
