@@ -181,8 +181,9 @@ module.exports={
       }
 }
 ```
-添加文件.eslintrc.js
+添加文件.eslintrc.js或者在package.json中的eslintConfig对象中进行配置
 ```js
+//.eslintrc.js
 module.exports = {
   root: true,
   env: {
@@ -215,6 +216,7 @@ module.exports = {
 
 添加文件.prettierrc.js
 ```js
+//.prettierrc.js
 module.exports = {
     printWidth: 100, //单行最多的字符，默认80
     tabWidth: 2, // tab缩进大小,默认为2
