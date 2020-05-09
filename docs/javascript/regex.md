@@ -68,5 +68,14 @@ function (moneyStr) {
     return (x2 + x3);
 };
 
+非正则金额千分位转换
+    function goOn(yy) {
+        let str = yy ? String(parseFloat(yy).toFixed(2)) : '';
+        let upindex = (str.length - 1) - str.indexOf('.')
+        str = str.split('').reverse().reduce((pre, next, index) => {
+            return index > (upindex + 3) && !(index % 3) ? next + ',' + pre : next + pre
+        })
+        return str
+    }
 
 ```
