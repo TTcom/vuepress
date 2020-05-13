@@ -30,6 +30,8 @@ module.exports = {
         ['vuebuttonauth', 'Vue中按钮权限设置'],
         ['vuex', 'vuex'],
         ['vueantic', 'vueantic'],
+        ['vue_eslint', 'vue_eslint'],
+        ['vue_template_invscode', 'vue_template_invscode'],
         ['vueplugin', 'vueplugin'],
         ['vue_proxy', 'vue_proxy'],
         ['vue_jwt', 'vue_jwt'],

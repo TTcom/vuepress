@@ -20,4 +20,5 @@ module.exports = [
     ['learndocker', 'learndocker'],
     ['moregitssh', '配置多个ssh'],
     ['vantcssquestion', 'vant移动端适配问题'],
+    ['cardanimation', 'cardanimation'],
   ]
