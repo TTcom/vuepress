@@ -35,6 +35,7 @@ module.exports = {
         ['vueplugin', 'vueplugin'],
         ['vue_proxy', 'vue_proxy'],
         ['vue_jwt', 'vue_jwt'],
+        ['vue_transition', 'vue_transition'],
         ['funcomponent', 'vue函数式组件']
       ],
       '/javascript/': [
