@@ -24,8 +24,7 @@ created(){
 ```
 
 4、$listeners
-
-组件向子组件传递自身所有的$emit。可直接调用父组件所有的$emit事件向上级组件传递事件例如：<br>
+组件向子组件传递自身所有的$emit(就是说孙子组件可以不用写@xxx="xxx"就可以直接触发在爷爷组件中绑定的父组件的事件)。可直接调用父组件所有的$emit事件向上级组件传递事件例如：<br>
 ```js
 <child v-on="$listeners"></child>
 
@@ -110,8 +109,11 @@ this.destroy()
 
 在2个子组件中我们使用jnject注入了provide提供的变量for，那么就都可以拿到for这个变量
 ```
-
-7、vue-cli-service build 环境设置
+```
+7、$attrs
+子组件不用写props部分的内容就可以直接获取在父组件中绑定的所有参数吗，并可以向自己的子组件绑定v-bind="$attrs" 可通过{{$attrs.xxx}}直接获取参数值
+```
+8、vue-cli-service build 环境设置
 
 ::: tip <span style="color:#999;font-weight: initial;"><a href="https://blog.csdn.net/linbenjian/article/details/85261201">猛戳详细原文介绍</a></span> 🎉 💯
 &ensp;                     				  
