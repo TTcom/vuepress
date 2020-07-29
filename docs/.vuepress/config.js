@@ -2,7 +2,7 @@ const nav = require('./nav.js')
 const note = require('./note.js')
 
 module.exports = {
-  // base:"/chat/",
+  //base:"./",
   title: 'Uphold',
   description: 'Just playing around',
   port: 8082,
