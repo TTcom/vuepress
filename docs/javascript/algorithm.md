@@ -74,3 +74,48 @@ var arr = [3,44,38,2,27]; //length: 5
     }
 
 ```
+## 全排列
+```js
+function(nums) {
+    let len = nums.length;
+    let res = [];
+    
+    function back(path){
+        if(path.length === len){
+            res.push(path);
+            return;
+        }
+        for(let i = 0;i < len;i++){
+            if(path.indexOf(nums[i]) === -1){	//这里的判断很精髓
+                path.push(nums[i]);
+                back(path.slice()); 
+               // console.log(path)
+                path.pop(); //移除最后一个数组元素  此处等于新开了一个新的开头的数组：比如【1,2,3】，他会产生一个【2】开头的数组，【3】开头的数组
+            }
+        }
+    }
+    back([]);
+    return res;
+}
+```
+
+## 最长公共前缀
+```js
+function fluter(arr){
+  
+    if(!arr.length){
+        return ''
+    }
+    return arr.reduce((pre,next)=>{
+        let i = 0;
+
+        while(pre[i] && next[i] && pre[i] === next[i]) i++
+
+        return pre.slice(0,i)
+    })
+
+}
+
+
+
+```
