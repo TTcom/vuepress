@@ -50,6 +50,7 @@ module.exports = {
         ['algorithm', '算法'],
         ['regex', '正则'],
         ['eventloop', 'eventloop'],
+        ['time', '时间相关操作'],
       ],
       '/note/': note,
       '/webpack/': [
