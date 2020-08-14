@@ -51,6 +51,7 @@ module.exports = {
         ['regex', '正则'],
         ['eventloop', 'eventloop'],
         ['time', '时间相关操作'],
+        ['model', '设计模式'],
       ],
       '/note/': note,
       '/webpack/': [
