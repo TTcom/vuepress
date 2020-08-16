@@ -36,7 +36,9 @@ module.exports = {
         ['vue_proxy', 'vue_proxy'],
         ['vue_jwt', 'vue_jwt'],
         ['vue_transition', 'vue_transition'],
-        ['funcomponent', 'vue函数式组件']
+        ['funcomponent', 'vue函数式组件'],
+        ['clickoutside', 'vue中点击空白处隐藏弹出框'],
+        ['appendbody', 'vue中将弹出框插入body中']
       ],
       '/javascript/': [
         {
