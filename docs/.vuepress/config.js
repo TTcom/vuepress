@@ -36,7 +36,8 @@ module.exports = {
         ['vue_proxy', 'vue_proxy'],
         ['vue_jwt', 'vue_jwt'],
         ['vue_transition', 'vue_transition'],
-        ['funcomponent', 'vue函数式组件']
+        ['funcomponent', 'vue函数式组件'],
+        ['axios_intercept', 'axios全局拦截配置']
       ],
       '/javascript/': [
         {
