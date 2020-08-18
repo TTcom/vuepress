@@ -37,7 +37,9 @@ module.exports = {
         ['vue_jwt', 'vue_jwt'],
         ['vue_transition', 'vue_transition'],
         ['funcomponent', 'vue函数式组件'],
-        ['axios_intercept', 'axios全局拦截配置']
+        ['axios_intercept', 'axios全局拦截配置'],
+        ['clickoutside', 'vue中点击空白处隐藏弹出框'],
+        ['appendbody', 'vue中将弹出框插入body中']
       ],
       '/javascript/': [
         {
