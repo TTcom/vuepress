@@ -39,7 +39,8 @@ module.exports = {
         ['funcomponent', 'vue函数式组件'],
         ['axios_intercept', 'axios全局拦截配置'],
         ['clickoutside', 'vue中点击空白处隐藏弹出框'],
-        ['appendbody', 'vue中将弹出框插入body中']
+        ['appendbody', 'vue中将弹出框插入body中'],
+        ['slideTransition', '页面切换动画']
       ],
       '/javascript/': [
         {
