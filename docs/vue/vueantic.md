@@ -1,5 +1,20 @@
 ### vueantic
 
+- 防抖节流函数
+```js
+  const debounced = (fn, deplay) => {
+    let timer
+    return function(args) {
+      //典型的闭包函数
+      if (timer) {
+        clearTimeout(timer)
+      }
+      timer = setTimeout(() => {
+        fn.call(this, args) //传入的函数没有this，所以要使用call或apply
+      }, deplay)
+    }
+  }
+```
 1、$on 
 
 用来监听组件的$emit事件，当触发某个指定的$emit事件时，触发该事件。例如：<br>
