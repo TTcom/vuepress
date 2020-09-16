@@ -39,9 +39,83 @@ created(){
 ```
 
 4、$listeners
-组件向子组件传递自身所有的$emit(就是说孙子组件可以不用写@xxx="xxx"就可以直接触发在爷爷组件中绑定的父组件的事件)。可直接调用父组件所有的$emit事件向上级组件传递事件例如：<br>
-```js
-<child v-on="$listeners"></child>
+子组件可以通过this.$listeners 获取它在父组件中绑定的事件，父组件可以通过v-on="$listeners" 把它自己在自己的父组件中绑定的事件进行传递
+```vue
+//app.vue
+
+<template>
+  <div id="app">
+    <son @check="nowcheck"></son>
+  </div>
+</template>
+<script>
+import son from "./views/son"
+export default {
+  components: {
+    son
+  },
+  methods: {
+    nowcheck() {
+      console.log("nowcheck")
+    }
+  }
+}
+</script>
+
+//son.vue
+
+<template>
+  <div class="son">
+    <button type="button" @click="soncheck">sonbtn</button>
+    <grandson @sendmsg="grandsonmsg" v-on="$listeners"></grandson>
+  </div>
+</template>
+<script>
+import grandson from "./grandson.vue"
+export default {
+  name: "son",
+  components: {
+    grandson
+  },
+  data() {
+    return {}
+  },
+  mounted() {
+    // console.log(this.$listeners) //获取父组件中绑定的事件
+    // console.log()
+    this.$listeners.check()
+  },
+  methods: {
+    soncheck() {
+      this.$emit("check")
+    },
+    grandsonmsg() {
+      console.log("grandsonmsg")
+    }
+  }
+}
+</script>
+<style lang="scss" scoped></style>
+
+//grandson.vue
+
+<template>
+  <div class="grandson">grandson</div>
+</template>
+<script>
+export default {
+  name: "grandson",
+  data() {
+    return {}
+  },
+  mounted() {
+    console.log(this.$listeners)
+  },
+  methods: {}
+}
+</script>
+<style lang="scss" scoped></style>
+
 
 ```
 
