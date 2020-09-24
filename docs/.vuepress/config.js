@@ -40,7 +40,8 @@ module.exports = {
         ['axios_intercept', 'axios全局拦截配置'],
         ['clickoutside', 'vue中点击空白处隐藏弹出框'],
         ['appendbody', 'vue中将弹出框插入body中'],
-        ['slideTransition', '页面切换动画']
+        ['slideTransition', '页面切换动画'],
+        ['vue_principle', 'principle']
       ],
       '/javascript/': [
         {
