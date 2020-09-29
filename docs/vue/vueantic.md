@@ -30,6 +30,14 @@ created(){
 2、$emit
 
 子组件向父组件进行通信
+```js
+ //父组件
+ <son :show.sync="show"></son>
+
+ //子组件
+ this.$emit('update:show',false); 
+
+```
 
 3、$props
 
