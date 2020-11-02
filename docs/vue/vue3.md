@@ -1,5 +1,15 @@
 ### Vue3的一些新特性
 
+### vue2与vue3的对比
+- 1、vue3源码全部采用typescript开发，对typescript支持友好
+- 2、Vue 3 源代码体积优化，使用函数api ,支持 tree-shaking
+- 3、数据劫持优化，使用Proxy
+- 3、编译优化，vue3实现了静态模板分析，重写diff算法
+- 4、新增了一些内置组件
+
+
+
+
 ::: tip <span style="color:#999;font-weight: initial;"><a href="https://github.com/TTcom/vue3_learn">vue3_learn demo链接</a></span> 🎉 💯
 &ensp;                     				  
 :::

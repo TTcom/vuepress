@@ -33,12 +33,9 @@ created(){
 ```js
  //父组件
  <son :show.sync="show"></son>
-
  //子组件
  this.$emit('update:show',false); 
-
 ```
-
 3、$props
 
 组件向子组件传递自身所有的props。例如：<br>
