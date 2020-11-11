@@ -51,6 +51,102 @@ var arr = [3,44,38,2,27]; //length: 5
 	console.log(arr)
 	
 ```
+## 快速排序
+```js
+function quicksort(arr){
+	if(arr.length <= 1 ){
+		return arr
+	}  
+	let middle =[]
+	let left = []
+	let right = []
+    for(let i = 0;i<arr.length;i++){
+	   if(arr[i]===arr[0]) middle.push(arr[i])
+	   if(arr[i]<arr[0]) left.push(arr[i])
+	   if(arr[i]>arr[0]) right.push(arr[i])
+	}
+    return quicksort(left).concat(middle).concat(quicksort(right))
+
+}
+```
+## 数组转链表
+```js
+//数组转链表
+function array2list(arr,start){
+ if(start===arr.length){
+	 return null
+ }
+  let node = {
+	  next:null,
+	  value:arr[start]
+  }
+  let rest = array2list(arr,start+1)
+  node.next = rest
+  
+  return node 
+
+}
+
+```
+## 链表转数组
+```js
+//链表转数组
+function turnarr(head){
+
+   let arr = []
+   let cur = head 
+  while(cur){
+	arr.push(cur.value)
+    cur = cur.next
+  }
+  return arr
+
+}
+
+```
+## 链表反转普通操作
+```js
+//链表反转普通操作
+function reveserlist(head){
+ let [pre,cur] = [null,head]
+
+	while(cur){
+		let temp = cur.next
+		cur.next = pre  //反转
+		pre = cur
+		cur = temp
+	}
+    return pre
+
+}
+```
+## 链表反转递归操作
+```js
+//链表反转递归操作
+function reveserlist(head){
+	  const receve = (pre,cur)=>{
+		if(!cur) return pre
+		let next = cur.next
+		    cur.next = pre  
+		    return receve(cur,next)
+	  }
+	   return receve(null,head)
+}
+```
+## 获取数组中两数之和为目标值的下标
+```js 
+function getsubindex(arr,target){
+	let i = 0
+	let temp = []
+	while(i<arr.length){
+		if(temp[target - arr[i]] !=undefined){
+			return [temp[target - arr[i]],i]
+		}
+		temp[arr[i]] = i
+		i++
+	}
+}
+```
 ## 获取数组
 ```js
      let arr = ['2','5','4','rew','yth'];
