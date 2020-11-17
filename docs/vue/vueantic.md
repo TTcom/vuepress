@@ -1,5 +1,6 @@
 ### vueantic
-
+- jsx
+- https://www.cnblogs.com/ainyi/p/13324222.html
 - 防抖节流函数
 ```js
   const debounced = (fn, deplay) => {
