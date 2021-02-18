@@ -1,4 +1,0 @@
-### webpack
-::: tip
-webpack
-:::
