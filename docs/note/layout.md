@@ -2,39 +2,53 @@
 
 - 使用flexible.js或hotCss.js 改js可适配不同屏幕-使用动态的HTML根字体大小和动态的viewport scale
 - 安装插件postcss-plugin-px2rem该插件可将px转为rem
-- 以vue-cli3为例首先在main.js中引入flexible.js或hotCss.js
-- 然后在vue.config.js中写入插件的配置
- ```js
- module.exports = {
- publicPath: process.env.NODE_ENV === 'production'
-         ? './'
-         : '/',
-             css: {
-                 loaderOptions: {
-                     postcss: {
- 					   
-                         plugins: [
-                             require('postcss-plugin-px2rem')({
-                                 rootValue: 75, //换算基数， 默认100  ，这样的话把根标签的字体规定为1rem为50px,这样就可以从设计稿上量出多少个px直接在代码中写多上px了。
-                                 // unitPrecision: 5, //允许REM单位增长到的十进制数字。
-                                 //propWhiteList: [],  //默认值是一个空数组，这意味着禁用白名单并启用所有属性。
-                                 // propBlackList: [], //黑名单
-                                 //exclude: /(node_module)/, //默认false，可以（reg）利用正则表达式排除某些文件夹的方法，例如/(node_module)\/如果想把前端UI框架内的px也转换成rem，请把此属性设为默认值
-                                 // selectorBlackList: [], //要忽略并保留为px的选择器
-                                 // ignoreIdentifier: false,  //（boolean/string）忽略单个属性的方法，启用ignoreidentifier后，replace将自动设置为true。
-                                 // replace: true, // （布尔值）替换包含REM的规则，而不是添加回退。
-                                 mediaQuery: false, //（布尔值）允许在媒体查询中转换px。 false意为不转换
-                                 minPixelValue: 3 //设置要替换的最小像素值(3px会被转rem)。 默认 0
-                             }),
- 							require("autoprefixer")
- 							
-                         ]
-                     }
-                 }
-             }
-     
-         }
+- 安装插件lib-flexible该插件可将根据不同的设备宽为HTML设置不同的font-size
+```js
+npm install postcss-pxtorem -D
+npm install lib-flexible -S
+```
 
- ```
+- 如果是vue-cli3为例首先在main.js中引入flexible.js或hotCss.js
+- 在根目录中新建postcss.config.js按如下格式对postcss-pxtorem进行设置
+```js
+module.exports = {
+  plugins: {
+    autoprefixer: {
+      overrideBrowserslist: ["Android >= 4.0", "iOS >= 8"]
+    },
+    "postcss-pxtorem": {
+      rootValue: 37.5,
+      propList: ["*"],
+      exclude: ""
+    }
+  }
+}
 
-关于browserslist的配置可查看[](https://chrisdeo.github.io/2019/08/16/%E5%85%B3%E4%BA%8Ebrowserslist%E7%9A%84%E9%85%8D%E7%BD%AE/)
+```
+
+- 如果是vue-cli2为例首先在main.js中引入flexible.js或hotCss.js
+- 在根目录中新建.postcssrc.js按如下格式对postcss-pxtorem进行设置
+```js
+module.exports = {
+  "plugins": {
+    "postcss-import": {},
+    "postcss-url": {},
+    // to edit target browsers: use "browserslist" field in package.json
+    'autoprefixer': {
+      browsers: ['Android >= 4.0', 'iOS >= 8']
+    },
+    'postcss-pxtorem': {
+      rootValue: 37.5,
+      propList: ['*'],
+      selectorBlackList: [],
+      exclude: "styles|element-ui|Front|manage|errorLog|errorPage|layout|login|components" //不需要处理的文件目录
+    }
+  }
+}
+
+
+```
+
+
+
+
