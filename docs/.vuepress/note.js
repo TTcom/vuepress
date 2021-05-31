@@ -23,4 +23,5 @@ module.exports = [
     ['cardanimation', 'cardanimation'],
     ['aboutios', 'aboutios'],
     ['aboutwechat', '微信公众号研发'],
+    ['aboutiframe', 'iframe父子页面信息传递'],
   ]
