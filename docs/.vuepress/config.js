@@ -12,6 +12,14 @@ module.exports = {
   themeConfig: {
     nav: nav,
     sidebar: {
+      '/typescript/': [
+        {
+          title: 'typescript',
+          collapsable: false,
+        },
+        ['', 'typescript'],
+        ['fun', '函数'],
+      ],
       '/array/': [
         {
           title: '数组练习',
