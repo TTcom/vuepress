@@ -28,6 +28,14 @@ module.exports = {
 
 - 如果是vue-cli2为例首先在main.js中引入flexible.js或hotCss.js
 - 在根目录中新建.postcssrc.js按如下格式对postcss-pxtorem进行设置
+- 如果你的项目很老了可能需要安装指定版本的依赖
+- 在package.json中安装以下依赖
+```json
+    "postcss-import": "11.1.0",
+    "postcss-loader": "2.1.6",
+    "postcss-pxtorem": "^5.1.1",
+    "postcss-url": "7.3.2",
+```
 ```js
 module.exports = {
   "plugins": {
