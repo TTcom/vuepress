@@ -7,7 +7,7 @@ module.exports = [
     ['nodeDeploy', 'node项目部署'],
     ['pspeople', '快速抠出头像'],
     ['vueheight', 'vueheight'],
-    ['layout', '移动端适配问题'],
+    ['layout', '移动端调试和适配问题'],
     ['aboutgit', '关于git'],
     ['aboutcss', 'aboutcss'],
     ['rowcss', 'rowcss'],   
