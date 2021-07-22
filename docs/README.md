@@ -2,6 +2,9 @@
 ::: tip  <span style="color:#999;font-weight: initial;">If can Should do</span>
  &ensp;                     				  
 :::
+::: tip <span style="color:#999;font-weight: initial;">不积跬步，无以至千里</span> 🎉 💯
+&ensp;                     				  
+:::
 ::: tip 使用说明
 npm install vuepress<br>
 npm run dev
