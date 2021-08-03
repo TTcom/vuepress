@@ -28,3 +28,37 @@ server {
         }
 
 ```
+2、nginx在linux下常用的命令
+```html
+linux 查看当前路径命令：pwd
+切换到目录/usr/local/nginx/sbin，/usr/local为nginx的默认安装目录
+#启动
+./nginx
+#查看命令帮助
+./nginx -h
+验证配置文件状态
+./nginx -t
+#编辑配置文件
+vim /usr/local/nginx/conf/nginx.conf# 重新载入配置文件./nginx -s reload  # 重启 Nginx./nginx -s reopen# 停止 Nginx./nginx -s stop(quit)
+如果我们的Nginx运行在80端口，那么就可以通过netstat -anp | grep :80命令来判断Nginx是否启动。
+```
+3、nginx在window下常用命令
+```html
+1、启动：
+
+C:\server\nginx-1.0.2>start nginx
+
+或
+
+C:\server\nginx-1.0.2>nginx.exe
+
+注：建议使用第一种，第二种会使你的cmd窗口一直处于执行中，不能进行其他命令操作。
+
+2、停止：
+
+C:\server\nginx-1.0.2>nginx.exe -s stop
+
+或
+
+C:\server\nginx-1.0.2>nginx.exe -s quit
+```
