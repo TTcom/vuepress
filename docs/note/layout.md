@@ -1,4 +1,5 @@
 ### 关于连接真机进行移动端调试问题
+- 地址栏输入chrome://inspect会打开设备监视页面
 - 使用谷歌浏览器需翻墙才能看到手机页面，亲测可以，使用edg浏览器不用翻墙未测试过
 - 可参考https://www.ruanyifeng.com/blog/2019/06/android-remote-debugging.html
 
