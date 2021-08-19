@@ -1,4 +1,7 @@
 ### 使用git遇到的问题
+#### git如何撤销commit的方法(未push)
+<img :src="$withBase('/gitcommit.png')" alt="mixureSecure">
+- 原文地址https://download.csdn.net/download/weixin_38707061/12924821?spm=1001.2101.3001.5697
 #### 问题一
 在git push的点时候报错<br />
 经常遇到该报错：Connection reset by 13.229.188.59 port 22 fatal: Could not read from remote repository.
