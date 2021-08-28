@@ -62,6 +62,18 @@ alert(str);//结果bbbcccdddeeefff;
     }else{
         this.salemoneytemp = val
     }
+金额校验
+function limitSmallDecimal(value) {
+    if (value === '0.0') {
+      return value
+    }
+    var result = (value.match(/^\d*(\.?\d{0,2})/g)[0]) || ''
+    if (result.lastIndexOf('.') === result.length - 1) {
+      return result
+    }
+    // return parseFloat(result) + ''
+    return result + ''
+  }
 
 金额千分位转换
 

@@ -62,7 +62,7 @@ module.exports = {
         ['promise', 'promise'],
         ['prototype', '原型链'],
         ['algorithm', '算法'],
-        ['regex', '正则'],
+        ['regex', '正则包含金额'],
         ['eventloop', 'eventloop'],
         ['time', '时间相关操作'],
         ['model', '设计模式'],
