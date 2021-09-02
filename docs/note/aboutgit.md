@@ -1,7 +1,22 @@
 ### 使用git遇到的问题
 #### git如何撤销commit的方法(未push)
 <img :src="$withBase('/gitcommit.png')" alt="mixureSecure">
+
+- 主要介绍了git如何撤销commit的方法(未push)
+
+- 撤销commit一般用git reset 
+
+- 语法如下：git reset [ --mixed | --soft | --hard] commitID
+
+- 1.使用参数--mixed(默认参数)，如git reset --mixed commitID或git reset commitID撤销git commit，撤销git add，保留编辑器改动代码
+
+- 2.使用参数--soft，如git reset --soft commitID 撤销gitcommit，不撤销git add，保留编辑器改动代码
+
+- 3.使用参数--hard，如git reset --hard commitID ——此方式非常暴力，全部撤销，慎用撤销gitcommit，撤销git add，删除编辑器改动代码
+
+
 - 原文地址https://download.csdn.net/download/weixin_38707061/12924821?spm=1001.2101.3001.5697
+
 #### 问题一
 在git push的点时候报错<br />
 经常遇到该报错：Connection reset by 13.229.188.59 port 22 fatal: Could not read from remote repository.
