@@ -1,6 +1,20 @@
 ### 时间复杂度 定性描述该算法的运行时间
 ### 空间复杂度 指代码运行过程中临时占用的存储空间大小
-
+## 函数柯里化
+```js
+function fn(){
+    let arr = [...arguments]
+    let fn1 = function(){
+        arr = arr.concat([...arguments])
+        return fn1
+    }
+    fn1.sum = function(){
+        return arr.reduce((pre,next)=> {return pre + next},0)
+    }
+    return fn1
+}
+console.log(fn(1)(2)(4).sum())
+```
 ## 冒泡排序
 ```js
 var arr = [3,44,38,2,27]; //length: 5

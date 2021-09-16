@@ -31,9 +31,9 @@ app.use(express.static('./dist'))
 //   res.end('list')
 // })
 
-app.listen(50000, function (err) {
+app.listen(80, function (err) {
   if (err) {
     console.log(err)
   }
-  console.log('listen http://localhost' + 50000 + '/n')
+  console.log('listen http://localhost' + 80 + '/n')
 })

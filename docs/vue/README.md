@@ -5,7 +5,7 @@
 - https://www.bilibili.com/video/BV1Tf4y1L7YH?from=search&seid=4625895786093377797&spm_id_from=333.337.0.0
 
 ### vue-cli 
-
+- 优化 https://blog.csdn.net/qq_21567385/article/details/107634781?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
 - Vue-Cli 2和3是不能并存的，至少不能同时安装，只能保留一个，在保留3的前提下还想用vue init怎么办？
 - 卸载你的Vue-Cli 2：npm uninstall vue-cli -g或yarn global remove vue-cli
 - 安装Vue-Cli 3：npm install -g @vue/cli或yarn global add @vue/cli
