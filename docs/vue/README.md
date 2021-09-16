@@ -1,4 +1,9 @@
 
+### vue源码学习
+- https://www.jianshu.com/p/302b0bd9abb2
+- https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUxNjQ1NjMwNw==&action=getalbum&album_id=1619085427984957440&scene=173&from_msgid=2247484034&from_itemidx=1&count=3&nolastread=1#wechat_redirect
+- https://www.bilibili.com/video/BV1Tf4y1L7YH?from=search&seid=4625895786093377797&spm_id_from=333.337.0.0
+
 ### vue-cli 
 
 - Vue-Cli 2和3是不能并存的，至少不能同时安装，只能保留一个，在保留3的前提下还想用vue init怎么办？

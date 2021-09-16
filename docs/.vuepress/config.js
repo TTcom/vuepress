@@ -59,6 +59,7 @@ module.exports = {
         },
         ['', 'javascript'],
         ['call_apply_bind', 'call_apply_bind'],
+        ['event', '自定义事件'],
         ['promise', 'promise'],
         ['prototype', '原型链'],
         ['algorithm', '算法'],
