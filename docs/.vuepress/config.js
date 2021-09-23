@@ -28,6 +28,13 @@ module.exports = {
         ['', '获取数组中出现次数最多的字符'],
         ['flat', 'ES10flat'],
       ],
+      '/react/': [
+        {
+          title: 'REACT',
+          collapsable: false,
+        },
+        ['', 'react']
+      ],
       '/vue/': [
         {
           title: 'VUE',
