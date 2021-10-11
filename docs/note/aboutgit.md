@@ -2,6 +2,8 @@
 #### git如何撤销commit的方法(未push)
 <img :src="$withBase('/gitcommit.png')" alt="mixureSecure">
 
+- git 撤销指定文件 git checkout 文件名
+
 - 主要介绍了git如何撤销commit的方法(未push)
 
 - 撤销commit一般用git reset 
