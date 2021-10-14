@@ -62,18 +62,25 @@ var app = {
     }
 };
 
-function useMouse(){
-    const x;
-    const y;
-    const update=e=>{
-        x=e.pageX;
-        y=e.pageY;
-    }
-    onMounted(()=>{
-         window.addEventListener('mousemove',update)
-    });
+//util.ts
+import { onMounted, ref } from "vue";
 
-}
+export const usermovemsg = () => {
+  const x = ref<number>(0);
+  const y = ref<number>(0);
+  function getgrid(e: any) {
+    x.value = e.x;
+    y.value = e.y;
+  }
+  onMounted(() => {
+    window.addEventListener("mousemove", getgrid);
+  });
+  //let obj =
+  return {
+    x,
+    y
+  };
+};
 
 
 ```
