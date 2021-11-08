@@ -1,4 +1,6 @@
 ### 使用git遇到的问题
+### git 重新提交commit 信息
+- git commit --amend -m "新的修改提交信息"
 #### git如何撤销commit的方法(未push)
 <img :src="$withBase('/gitcommit.png')" alt="mixureSecure">
 
