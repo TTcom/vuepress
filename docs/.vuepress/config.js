@@ -12,6 +12,13 @@ module.exports = {
   themeConfig: {
     nav: nav,
     sidebar: {
+      '/git/': [
+        {
+          title: 'git',
+          collapsable: false,
+        },
+        ['', 'git']
+      ],
       '/typescript/': [
         {
           title: 'typescript',

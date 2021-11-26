@@ -8,5 +8,6 @@ module.exports = [
     { text: 'typescript', link: '/typescript/' },
     { text: 'webpack', link: '/webpack/' },
     { text: 'Nginx', link: '/nginx/' },
+    { text: 'git', link: '/git/' },
     { text: 'github', link: 'https://github.com' },
   ]
