@@ -1,3 +1,5 @@
+### gitlab网页 分支合并 冲突处理
+- https://blog.csdn.net/magic_kid_2010/article/details/100977008
 ### git设置代理
 #### 只为github设置代理
 1、socks5: 
