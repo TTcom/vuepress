@@ -45,9 +45,10 @@ created(){
 ```
 
 4、$listeners
-子组件可以通过this.$listeners 获取它在父组件中绑定的事件，父组件可以通过v-on="$listeners" 把它自己在自己的父组件中绑定的事件进行传递
+<!-- 子组件可以通过this.$listeners 获取它在父组件中绑定的事件，父组件可以通过v-on="$listeners" 把它自己在自己的父组件中绑定的事件进行传递 -->
+子组件向爷爷组件发送消息可通过在父组件中绑定v-on="$listeners"进行传递
 ```vue
-//app.vue
+//爷爷组件
 
 <template>
   <div id="app">
@@ -88,12 +89,11 @@ export default {
   },
   mounted() {
     // console.log(this.$listeners) //获取父组件中绑定的事件
-    // console.log()
-    this.$listeners.check()
+    // this.$listeners.check()
   },
   methods: {
     soncheck() {
-      this.$emit("check")
+      // this.$emit("check")  //向爷爷组件传递信息
     },
     grandsonmsg() {
       console.log("grandsonmsg")
@@ -106,7 +106,9 @@ export default {
 //grandson.vue
 
 <template>
-  <div class="grandson">grandson</div>
+  <div class="grandson">
+   <button type="button" @click="tosendmsg">sonbtn</button>
+  </div>
 </template>
 <script>
 export default {
@@ -117,12 +119,16 @@ export default {
   mounted() {
     console.log(this.$listeners)
   },
-  methods: {}
+  methods: {
+    tosendmsg(){
+      this.$emit("check")  //向爷爷组件传递信息
+    }
+  }
 }
 </script>
 <style lang="scss" scoped></style>
 
-
+可参考https://www.cnblogs.com/wjw1014/p/13739450.html
 ```
 
 5、$off或$destroy
