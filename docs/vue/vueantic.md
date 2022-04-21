@@ -214,7 +214,16 @@ this.destroy()
 7、$attrs
 子组件不用写props部分的内容就可以直接获取在父组件中绑定的所有参数吗，并可以向自己的子组件绑定v-bind="$attrs" 可通过{{$attrs.xxx}}直接获取参数值
 ```
-8、vue-cli-service build 环境设置
+8、Vue任意组件间通信方式
+```js
+this.$bus.$emit('eventName',value) //触发事件
+this.$bus.$on('eventName',()=>{})  //接收事件
+//解绑当前组件所用到的事件
+ beforeDestroy() {
+	 this.$bus.$off('enentName')
+	}
+```
+vue-cli-service build 环境设置
 
 ::: tip <span style="color:#999;font-weight: initial;"><a href="https://blog.csdn.net/linbenjian/article/details/85261201">猛戳详细原文介绍</a></span> 🎉 💯
 &ensp;                     				  
