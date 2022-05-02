@@ -9,5 +9,6 @@ module.exports = [
     { text: 'webpack', link: '/webpack/' },
     { text: 'Nginx', link: '/nginx/' },
     { text: 'git', link: '/git/' },
+    { text: 'linux', link: '/linux/' },
     { text: 'github', link: 'https://github.com' },
   ]
