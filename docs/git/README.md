@@ -2,17 +2,17 @@
 - https://blog.csdn.net/magic_kid_2010/article/details/100977008
 ### git设置代理
 #### 只为github设置代理
-1、socks5: 
-- git config --global http.https://github.com.proxy 'socks5://127.0.0.1:7890'
-2、http.https: 
+- 1、socks5: 
+- git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+- 2、http.https: 
 - git config --global http.https://github.com.proxy https://127.0.0.1:7890
 #### 取消代理
 - git config --global --unset http.https://github.com.proxy
 #### 为所有git设置代理
-1、socks5: 
+- 1、socks5: 
 - git config --global http.proxy 'socks5://127.0.0.1:1080'
 - git config --global https.proxy 'socks5://127.0.0.1:1080'
-2、http.https: 
+- 2、http.https: 
 - git config --global https.proxy http://127.0.0.1:1080
 - git config --global https.proxy https://127.0.0.1:1080
 #### 取消代理
