@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "push": "git add . && git commit -m 'add' && git push"
   },
   "devDependencies": {
     "vuepress": "^1.8.2"
