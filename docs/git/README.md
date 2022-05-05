@@ -2,6 +2,9 @@
 - https://blog.csdn.net/magic_kid_2010/article/details/100977008
 ### 查看git的所有配置
 git config --global -l 
+### 设置代理
+git config --global --add remote.origin.proxy "[http://127.0.0.1:7890]"
+
 ### git设置代理
 #### 只为github设置代理
 - 1、socks5: 
