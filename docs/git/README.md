@@ -1,3 +1,6 @@
+### git 用一次新的commit来回滚之前的commit
+- git revert <commit_id> 如果是回滚之前的merge的commit使用git revert -m 1 <commit_id>
+
 ### gitlab网页 分支合并 冲突处理
 - https://blog.csdn.net/magic_kid_2010/article/details/100977008
 ### 查看git的所有配置
